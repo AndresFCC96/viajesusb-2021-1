@@ -52,7 +52,7 @@ public class ViajesApplication implements CommandLineRunner{
 //	   buscarTodosTiposDestinoOrdenados();
 //	   consultaTipoDestinoPorCodigo();
 //	   consultaTiposDestinoPorEstadoPorCodigo();
-	   guardarDestino();
+//	   guardarDestino();
 //	   eliminarDestino();
 //	   actualizarDestino();
 //	   consultarDestinoPorCodigoPorEstado();
@@ -90,6 +90,8 @@ public class ViajesApplication implements CommandLineRunner{
 			for (TipoDestino tipoDestino : lstTipoDestino) {
 				log.info("Tipo destino: "+tipoDestino.getCodigo() + " - " + tipoDestino.getNombre());
 			}
+			
+			log.info("Se agrego este comentario para visualizar el git");
 			
 		} catch (Exception e) {
 			log.error(e.getMessage());
